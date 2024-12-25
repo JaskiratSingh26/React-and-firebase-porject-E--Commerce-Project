@@ -28,9 +28,9 @@ import Bynowpage from './components/bynow/Bynowpage'
 import Changingorderstatus from './components/Admin/changingorderstatus'
 
 
-function App() {
+function App()  {
   return (
-  
+   
 
     
     <Mystate>
