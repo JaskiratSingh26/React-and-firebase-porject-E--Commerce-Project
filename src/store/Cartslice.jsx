@@ -31,7 +31,7 @@ const cartslice = createSlice({
             if (item) {
                 item.quantity++; // Modify the draft directly
             }
-        },
+        }, 
 
         decrementtocart: (state, action) => {
             const item = state.items.find(item => item.ProductID === action.payload.ProductID);
