@@ -78,6 +78,10 @@
 
 
 
+
+
+
+
 import React, { useContext } from 'react';
 import Mycontext from '../../Context/Mycontext';
 import Loader from '../loader/Loader';
@@ -110,45 +114,28 @@ function UserDashboard() {
             <div key={index} className='mb-4'>
               <div className='border border-black bg-white shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105'>
                 <div className='flex flex-col max-sm:flex-col-reverse'>
-                  {/* <div className='p-5 font-semibold text-lg w-full max-sm:w-full'>
+                  <div className='p-5 font-semibold text-lg w-full max-sm:w-full'>
                     <h1 className='text-xl font-bold max-sm:text-lg'>Order Items</h1>
-                    <div className='max-sm:overflow-x-auto max-sm:overflow-y-hidden'>
-                      {item.cartitems.map((items, index) => (
-                        <div key={index} className='mt-4 flex items-center max-sm:inline-block max-sm:w-1/2 max-sm:mr-4'>
-                          <img src={items.url} alt="" className='rounded-xl w-16 h-16 shadow-md' />
-                          <div className='ml-4'>
-                            <h1 className='font-semibold text-lg max-sm:text-base'>{items.title}</h1>
-                            <h2 className='text-sm'>Category: {items.category}</h2>
-                            <div className='flex justify-between w-full'>
-                              <h2 className='text-sm'>Quantity: {items.quantity}</h2>
-                              <h2 className='text-sm'>Subtotal: ₹{items.quantity * items.price}</h2>
+                    <div className='overflow-x-auto w-full'>
+                      <div className='flex flex-nowrap'>
+                        {item.cartitems.map((items, index) => (
+                          <div key={index} className='flex-shrink-0 w-full max-sm:w-full'>
+                            <div className='bg-white shadow-md rounded-lg p-4 w-full'>
+                              <img src={items.url} alt="" className='rounded-xl w-16 h-16 shadow-md' />
+                              <div className='ml-4'>
+                                <h1 className='font-semibold text-lg max-sm:text-base'>{items.title}</h1>
+                                <h2 className='text-sm'>Category: {items.category}</h2>
+                                <div className='flex justify-between w-full'>
+                                  <h2 className='text-sm'>Quantity: {items.quantity}</h2>
+                                  <h2 className='text-sm'>Subtotal: ₹{items.quantity * items.price}</h2>
+                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
-                  </div> */}
-
-<div className='p-5 font-semibold text-lg w-full max-sm:w-full'>
-  <h1 className='text-xl font-bold max-sm:text-lg'>Order Items</h1>
-  <div className='max-sm:overflow-x-auto max-sm:overflow-y-hidden flex flex-nowrap'>
-    {item.cartitems.map((items, index) => (
-      <div key={index} className='mt-4 flex-shrink-0 w-1/2 max-sm:w-1/2 max-sm:mr-4'>
-        <img src={items.url} alt="" className='rounded-xl w-16 h-16 shadow-md' />
-        <div className='ml-4'>
-          <h1 className='font-semibold text-lg max-sm:text-base'>{items.title}</h1>
-          <h2 className='text-sm'>Category: {items.category}</h2>
-          <div className='flex justify-between w-full'>
-            <h2 className='text-sm'>Quantity: {items.quantity}</h2>
-            <h2 className='text-sm'>Subtotal: ₹{items.quantity * items.price}</h2>
-          </div>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
-
+                  </div>
 
                   <div className='bg-pink-100 w-full max-sm:w-full p-2 rounded-lg shadow-md'>
                     <h1 className='font-bold text-lg max-sm:text-base'>Order ID</h1>
